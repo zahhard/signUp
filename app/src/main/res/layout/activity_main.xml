@@ -17,7 +17,8 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="53dp"
-            android:text="Sign up"
+            android:text="@string/sign_up"
+            android:layout_marginHorizontal="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
             android:textAlignment="center"
@@ -25,68 +26,92 @@
             android:textSize="34sp"
             android:textStyle="italic" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/my_editText"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/myTextInputLayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:hint="Full name"
-            android:singleLine="true"
-            android:textColor="#838080"
-            android:textSize="20sp" />
+            android:layout_marginVertical="8dp"
+            android:layout_marginHorizontal="16dp">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/my_editText2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:hint="User name"
-            android:singleLine="true"
-            android:textColor="#838080"
-            android:textSize="20sp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/my_editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name"
+                android:singleLine="true"
+                android:background="#FFFFFF"
+                android:textColor="#000000" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/my_editText3"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/myTextInputLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:singleLine="true"
-            android:textColor="#838080"
-            android:textSize="20sp" />
+            android:layout_marginVertical="8dp"
+            android:layout_marginHorizontal="16dp">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/my_editText5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="numberPassword"
-            android:layout_margin="8dp"
-            android:singleLine="true"
-            android:textColor="#838080"
-            android:textSize="20sp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/my_editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_name"
+                android:singleLine="true"
+                android:background="#FFFFFF"
+                android:textColor="#000000" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/my_editText4"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/myTextInputLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Re-type Password"
-            android:inputType="numberPassword"
-            android:singleLine="true"
-            android:textColor="#838080"
-            android:layout_margin="8dp"
-            android:textSize="20sp" />
+            android:layout_marginVertical="8dp"
+            android:layout_marginHorizontal="16dp">
 
-        <TextView
-            android:id="@+id/textView6"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/my_editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:singleLine="true"
+                android:background="#FFFFFF"
+                android:textColor="#000000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/myTextInputLayout5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="Gender"
-            android:textColor="#000000"
-            android:textSize="34sp"
-            android:textStyle="italic" />
+            android:layout_marginVertical="8dp"
+            android:layout_marginHorizontal="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/my_editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:singleLine="true"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/myTextInputLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:layout_marginHorizontal="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/my_editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/re_type_password"
+                android:singleLine="true"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -96,28 +121,30 @@
             <RadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="wrap_content"
+                android:layout_margin="8dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Female"
-                android:textSize="20sp" />
+                android:text="@string/female"
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/radioButton3"
                 android:layout_width="wrap_content"
+                android:layout_margin="8dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Male"
-                android:textSize="20sp" />
+                android:text="@string/male"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
+            android:layout_marginHorizontal="16dp"
             android:backgroundTint="#E91E63"
             android:foregroundTint="#E91E63"
-            android:text="Regester"
+            android:text="@string/regester"
             android:textSize="20sp"
             app:cornerRadius="30dp" />
 
@@ -125,8 +152,8 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:text="Show info"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/show_info"
             android:textSize="20sp"
             app:cornerRadius="30dp" />
 
@@ -134,90 +161,83 @@
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dip"
-            android:alpha="0"
+            android:layout_marginVertical="8dip"
+            android:layout_marginHorizontal="16dp"
             android:background="@drawable/et_style"
             android:backgroundTint="#77E8F6"
-            android:hint="Your name"
+            android:hint="@string/your_name"
             android:padding="10dp"
             android:textAlignment="center"
             android:textColor="#040000"
-            android:textSize="24sp"
+            android:textSize="20sp"
              />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dip"
-            android:alpha="0"
+            android:layout_marginVertical="8dip"
+            android:layout_marginHorizontal="16dp"
             android:background="@drawable/et_style"
             android:backgroundTint="#77E8F6"
-            android:hint="User name"
             android:padding="10dp"
+            android:hint="@string/user_name"
             android:textAlignment="center"
             android:textColor="#040000"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dip"
-            android:alpha="0"
+            android:layout_marginVertical="8dip"
+            android:layout_marginHorizontal="16dp"
             android:background="@drawable/et_style"
             android:backgroundTint="#77E8F6"
-            android:hint="Email"
+            android:hint="@string/email"
             android:padding="10dp"
             android:textAlignment="center"
             android:textColor="#040000"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dip"
-            android:alpha="0"
+            android:layout_marginVertical="8dip"
+            android:layout_marginHorizontal="16dp"
             android:background="@drawable/et_style"
             android:backgroundTint="#77E8F6"
-            android:hint="Password"
+            android:hint="@string/password"
             android:padding="10dp"
             android:textAlignment="center"
             android:textColor="#040000"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dip"
-            android:alpha="0"
+            android:layout_marginVertical="8dip"
+            android:layout_marginHorizontal="16dp"
             android:background="@drawable/et_style"
             android:backgroundTint="#77E8F6"
-            android:hint="Genger"
+            android:hint="@string/genger"
             android:padding="10dp"
             android:textAlignment="center"
             android:textColor="#040000"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:alpha="0"
+            android:layout_marginVertical="8dip"
+            android:layout_marginHorizontal="16dp"
             android:backgroundTint="#DA56F1"
-            android:text="Hide info"
+            android:text="@string/hide_info"
             android:textSize="20sp"
             app:cornerRadius="30dp" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/myTextInputLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
 </ScrollView>

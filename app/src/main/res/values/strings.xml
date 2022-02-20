@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">signUp</string>
+    <string name="app_name">sign Up</string>
+    <string name="full_name">Full name</string>
+    <string name="user_name">User name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="re_type_password">Re-type password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="regester">Regester</string>
+    <string name="show_info">Show info</string>
+    <string name="your_name">Full name</string>
+    <string name="genger">Genger</string>
+    <string name="hide_info">Hide info</string>
+    <string name="sign_up">Sign up</string>
 </resources>
